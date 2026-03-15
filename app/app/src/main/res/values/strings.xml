@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Stylea</string>
+
+    <!-- Main screen -->
+    <string name="title_main">Try Any Outfit Instantly</string>
+    <string name="subtitle_main">Upload a fashion photo to see how it looks on you</string>
+    <string name="btn_pick_fashion">Pick Fashion Image</string>
+    <string name="btn_take_selfie">Take a Selfie</string>
+    <string name="btn_pick_photo">Pick from Gallery</string>
+    <string name="btn_try_on">Try It On!</string>
+    <string name="label_fashion_photo">Fashion Photo</string>
+    <string name="label_your_photo">Your Photo</string>
+    <string name="hint_fashion_photo">Tap to upload a fashion image</string>
+    <string name="hint_your_photo">Tap to add your photo</string>
+
+    <!-- Try-on screen -->
+    <string name="title_try_on">Your Look</string>
+    <string name="title_segmented">Extracted Outfit</string>
+    <string name="btn_share">Share</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_try_again">Try Another</string>
+    <string name="label_original">Original</string>
+    <string name="label_result">Result</string>
+
+    <!-- Loading / errors -->
+    <string name="loading_segmenting">Extracting outfit…</string>
+    <string name="loading_tryon">Generating your look…</string>
+    <string name="error_no_images">Please select both a fashion image and your photo.</string>
+    <string name="error_network">Network error. Please check the server is running.</string>
+    <string name="error_server">Server error. Please try again.</string>
+    <string name="error_generic">Something went wrong. Please try again.</string>
+    <string name="success_saved">Image saved to gallery.</string>
+
+    <!-- Content descriptions (accessibility) -->
+    <string name="cd_fashion_image">Selected fashion image</string>
+    <string name="cd_person_image">Your selected photo</string>
+    <string name="cd_result_image">Try-on result image</string>
+    <string name="cd_segmented_image">Segmented clothing image</string>
+</resources>
