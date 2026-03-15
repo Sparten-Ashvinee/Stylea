@@ -78,7 +78,18 @@ def _get_predictor() -> SamPredictor:
             )
         logger.info("Loading SAM model from %s …", checkpoint)
         device = "cuda" if torch.cuda.is_available() else "cpu"
-        sam = sam_model_registry[SAM_MODEL_TYPE](checkpoint=checkpoint)
+
+        # Build the model architecture without loading weights so that we
+        # control the torch.load call.  Passing checkpoint=None skips SAM's
+        # internal torch.load, which would not set weights_only=True and is
+        # therefore vulnerable to deserialization attacks (CVE / GHSA for
+        # torch < 2.6.0).  We load the state dict ourselves with
+        # weights_only=True, which restricts unpickling to tensors and basic
+        # Python scalars only.
+        sam = sam_model_registry[SAM_MODEL_TYPE](checkpoint=None)
+        with open(checkpoint, "rb") as f:
+            state_dict = torch.load(f, map_location=device, weights_only=True)
+        sam.load_state_dict(state_dict)
         sam.to(device=device)
         _sam_predictor = SamPredictor(sam)
         logger.info("SAM model loaded on %s.", device)
