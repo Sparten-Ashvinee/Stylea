@@ -13,8 +13,6 @@ own photo so you can see exactly how the outfit would look on you.
 
 > **Figure:** SAM's three components — an image encoder (ViT-based), a prompt encoder (handling points, boxes, masks, and text), and a lightweight mask decoder that predicts the segmentation mask in real time.
 
----
-
 ## How It Works
 
 1. **Pick a fashion image** – any product photo of a garment.

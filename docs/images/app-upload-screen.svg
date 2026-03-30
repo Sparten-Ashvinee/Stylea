@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 780" width="380" height="780" font-family="Roboto, Arial, sans-serif">
+
+  <!-- Phone shell -->
+  <rect x="10" y="10" width="360" height="760" rx="36" ry="36" fill="#1a1a2e" stroke="#444" stroke-width="2"/>
+  <!-- Screen -->
+  <rect x="20" y="30" width="340" height="720" rx="28" ry="28" fill="#FAFAFA"/>
+
+  <!-- Status bar -->
+  <rect x="20" y="30" width="340" height="28" rx="28" ry="0" fill="#6200EE"/>
+  <rect x="20" y="44" width="340" height="14" fill="#6200EE"/>
+  <text x="40" y="50" font-size="11" fill="white" font-weight="600">9:41</text>
+  <text x="300" y="50" font-size="11" fill="white">●●●</text>
+
+  <!-- App bar -->
+  <rect x="20" y="58" width="340" height="52" fill="#6200EE"/>
+  <text x="36" y="91" font-size="19" fill="white" font-weight="700">Stylea</text>
+  <text x="200" y="87" font-size="11" fill="#CE93D8">✦ Virtual Try-On</text>
+
+  <!-- Subtitle -->
+  <text x="36" y="134" font-size="13" fill="#555">Upload a fashion photo &amp; your photo</text>
+
+  <!-- ── SECTION LABEL: Upload Images ── -->
+  <text x="36" y="162" font-size="12" fill="#6200EE" font-weight="700" letter-spacing="0.5">UPLOAD IMAGES</text>
+
+  <!-- Fashion image card -->
+  <rect x="30" y="172" width="148" height="182" rx="12" fill="white" stroke="#E0E0E0" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="30" y="172" width="148" height="182" rx="12" fill="#F3E5F5" stroke="#CE93D8" stroke-width="1.5"/>
+  <!-- Clothes icon placeholder -->
+  <text x="104" y="230" font-size="34" text-anchor="middle" fill="#9C27B0">👗</text>
+  <text x="104" y="254" font-size="11" text-anchor="middle" fill="#7B1FA2" font-weight="600">Fashion Photo</text>
+  <text x="104" y="270" font-size="10" text-anchor="middle" fill="#9E9E9E">Tap to upload</text>
+  <!-- Upload button -->
+  <rect x="50" y="282" width="108" height="30" rx="15" fill="#6200EE"/>
+  <text x="104" y="302" font-size="11" text-anchor="middle" fill="white" font-weight="600">+ Choose Image</text>
+  <!-- Camera icon row -->
+  <text x="104" y="344" font-size="10" text-anchor="middle" fill="#9E9E9E">or use camera  📷</text>
+
+  <!-- Person image card -->
+  <rect x="202" y="172" width="148" height="182" rx="12" fill="#E8F5E9" stroke="#A5D6A7" stroke-width="1.5"/>
+  <!-- Person icon placeholder -->
+  <text x="276" y="230" font-size="34" text-anchor="middle" fill="#388E3C">🧑</text>
+  <text x="276" y="254" font-size="11" text-anchor="middle" fill="#2E7D32" font-weight="600">Your Photo</text>
+  <text x="276" y="270" font-size="10" text-anchor="middle" fill="#9E9E9E">Tap to upload</text>
+  <!-- Upload button -->
+  <rect x="222" y="282" width="108" height="30" rx="15" fill="#388E3C"/>
+  <text x="276" y="302" font-size="11" text-anchor="middle" fill="white" font-weight="600">+ Choose Image</text>
+  <text x="276" y="344" font-size="10" text-anchor="middle" fill="#9E9E9E">or use camera  📷</text>
+
+  <!-- ── SECTION LABEL: Select Dress Region ── -->
+  <text x="36" y="382" font-size="12" fill="#6200EE" font-weight="700" letter-spacing="0.5">SELECT DRESS REGION</text>
+  <text x="36" y="398" font-size="11" fill="#757575">Tap or draw on the fashion photo to mark the garment</text>
+
+  <!-- Region selection canvas -->
+  <rect x="30" y="410" width="320" height="200" rx="12" fill="#FFF8E1" stroke="#FFB300" stroke-width="1.5" stroke-dasharray="6,3"/>
+
+  <!-- Simulated fashion photo thumbnail with overlay -->
+  <rect x="50" y="425" width="120" height="160" rx="8" fill="#EDE7F6"/>
+  <text x="110" y="490" font-size="40" text-anchor="middle" fill="#7B1FA2">👗</text>
+  <text x="110" y="520" font-size="9" text-anchor="middle" fill="#9E9E9E">Fashion image preview</text>
+
+  <!-- Drawn selection polygon overlay -->
+  <polygon points="68,448 152,448 160,560 56,562" fill="rgba(98,0,238,0.18)" stroke="#6200EE" stroke-width="2" stroke-dasharray="5,3"/>
+  <!-- Corner handles -->
+  <circle cx="68" cy="448" r="5" fill="#6200EE"/>
+  <circle cx="152" cy="448" r="5" fill="#6200EE"/>
+  <circle cx="160" cy="560" r="5" fill="#6200EE"/>
+  <circle cx="56" cy="562" r="5" fill="#6200EE"/>
+
+  <!-- Instructions panel -->
+  <rect x="184" y="425" width="152" height="160" rx="8" fill="white" stroke="#E0E0E0" stroke-width="1"/>
+  <text x="192" y="447" font-size="11" fill="#6200EE" font-weight="700">How to select:</text>
+  <text x="192" y="466" font-size="10" fill="#555">① Tap corners of the</text>
+  <text x="192" y="480" font-size="10" fill="#555">    garment to draw a</text>
+  <text x="192" y="494" font-size="10" fill="#555">    selection region</text>
+  <text x="192" y="514" font-size="10" fill="#555">② Drag handles to</text>
+  <text x="192" y="528" font-size="10" fill="#555">    adjust the boundary</text>
+  <text x="192" y="548" font-size="10" fill="#555">③ Tap ✓ to confirm</text>
+  <text x="192" y="568" font-size="10" fill="#9E9E9E">SAM will auto-refine</text>
+
+  <!-- Tool row: pen / lasso / eraser / reset -->
+  <rect x="30" y="618" width="320" height="36" rx="10" fill="#EDE7F6"/>
+  <!-- Pen -->
+  <rect x="36" y="623" width="68" height="26" rx="8" fill="#6200EE"/>
+  <text x="70" y="641" font-size="11" text-anchor="middle" fill="white">✏️ Draw</text>
+  <!-- Lasso -->
+  <rect x="112" y="623" width="68" height="26" rx="8" fill="white" stroke="#9C27B0" stroke-width="1"/>
+  <text x="146" y="641" font-size="11" text-anchor="middle" fill="#6200EE">⬡ Lasso</text>
+  <!-- Eraser -->
+  <rect x="188" y="623" width="68" height="26" rx="8" fill="white" stroke="#9C27B0" stroke-width="1"/>
+  <text x="222" y="641" font-size="11" text-anchor="middle" fill="#6200EE">⌫ Erase</text>
+  <!-- Reset -->
+  <rect x="264" y="623" width="80" height="26" rx="8" fill="white" stroke="#F44336" stroke-width="1"/>
+  <text x="304" y="641" font-size="11" text-anchor="middle" fill="#F44336">↺ Reset</text>
+
+  <!-- ── Try It On button ── -->
+  <rect x="36" y="672" width="308" height="52" rx="26" fill="#6200EE"/>
+  <!-- Subtle gradient feel via a lighter overlay -->
+  <rect x="36" y="672" width="308" height="26" rx="26" fill="rgba(255,255,255,0.08)"/>
+  <text x="190" y="705" font-size="16" text-anchor="middle" fill="white" font-weight="700">✨  Try It On!</text>
+
+  <!-- Home indicator -->
+  <rect x="155" y="735" width="70" height="4" rx="2" fill="#BDBDBD"/>
+
+  <!-- Drop shadow filter definition -->
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#00000022"/>
+    </filter>
+  </defs>
+
+</svg>
