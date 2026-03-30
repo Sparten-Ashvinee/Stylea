@@ -9,27 +9,9 @@ own photo so you can see exactly how the outfit would look on you.
 
 ## Architecture
 
-```
-Stylea/
-├── backend/          # Python / FastAPI – AI processing server
-│   ├── main.py           # API endpoints (/segment, /tryon, /health)
-│   ├── download_models.py# One-time SAM checkpoint download
-│   ├── conftest.py       # Pytest stubs for CI (no GPU required)
-│   ├── requirements.txt
-│   ├── Dockerfile
-│   └── tests/
-│       └── test_api.py
-└── app/              # Android application (Kotlin)
-    ├── app/
-    │   └── src/main/
-    │       ├── java/com/stylea/app/
-    │       │   ├── ui/activities/  # MainActivity, TryOnActivity
-    │       │   ├── ui/viewmodels/  # TryOnViewModel
-    │       │   └── data/           # API client, data models
-    │       └── res/                # Layouts, strings, colours
-    ├── build.gradle
-    └── settings.gradle
-```
+![SAM Model Architecture](https://raw.githubusercontent.com/facebookresearch/segment-anything/main/assets/model_diagram.png)
+
+> **Figure:** SAM's three components — an image encoder (ViT-based), a prompt encoder (handling points, boxes, masks, and text), and a lightweight mask decoder that predicts the segmentation mask in real time.
 
 ---
 
